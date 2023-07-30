@@ -1,8 +1,5 @@
 <script lang="ts">
-	import Bell from '@assets/icons/Bell.svelte';
-	import Magnifer from '@assets/icons/Magnifer.svelte';
-	import Notification from '@assets/icons/Notification.svelte';
-	import userAvatar from '@assets/imgs/user_avatar.jpg';
+	import ItemRail from '@component/header/ItemRail.svelte';
 	import NavRail from '@component/header/NavRail.svelte';
 
 	// Mock Data
@@ -27,32 +24,7 @@
 
 			<NavRail linkList={mainlinks} isCurrent={parentNavCurrent} />
 		</div>
-		<div class="flex justify-end items-center ms-auto">
-			<button
-				class="p-4 rounded-xl text-ink-300 hover:text-white hover:bg-ink-800 transition-all duration-200 ease-in-out"
-			>
-				<Magnifer size={24} />
-			</button>
-			<button
-				class="p-4 rounded-xl text-ink-300 hover:text-white hover:bg-ink-800 transition-all duration-200 ease-in-out"
-			>
-				<Notification size={24} />
-			</button>
-			<button
-				class="p-4 rounded-xl text-ink-300 hover:text-white hover:bg-ink-800 transition-all duration-200 ease-in-out"
-			>
-				<Bell size={24} />
-			</button>
-			<button
-				class="p-2 rounded-xl text-ink-300 hover:text-white hover:bg-ink-800 transition-all duration-200 ease-in-out"
-			>
-				<img
-					src={userAvatar}
-					alt="a emoji of the user with a white background"
-					class="w-10 h-10 rounded-xl"
-				/>
-			</button>
-		</div>
+		<ItemRail />
 	</div>
 </div>
 
